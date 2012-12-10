@@ -1,0 +1,34 @@
+{
+  "name": "faketoe",
+  "description": "XML to JSON converter",
+  "version": "0.0.1",
+  "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
+  "contributors":[
+    "Tom Hughes-Croucher <tom.croucher@gmail.com>"
+  ],
+  "repository": "git://github.com/walmartlabs/faketoe",
+  "main": "index",
+  "keywords": [
+    "xml",
+    "json"
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "node-expat": "1.6.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.0.x"
+  },
+  "scripts": {
+    "test": "make test && make unit"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/walmartlabs/faketoe/raw/master/LICENSE"
+    }
+  ]
+}

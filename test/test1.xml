@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<item>
+  <name>1</name>
+  <property>a</property>
+  <child>
+    <name>2</name>
+    <property>a</property>
+    <child>
+      <name>3</name>
+      <property>a</property>
+    </child>
+    <child>
+      <name>4</name>
+    </child>
+  </child>
+  <child>
+    <name>5</name>
+  </child>
+</item>
