@@ -1,5 +1,5 @@
-<a href="/walmartlabs/blammo"><img src="https://raw.github.com/walmartlabs/blammo/master/images/from.png" align="right" /></a>
-![faketoe Logo](https://raw.github.com/walmartlabs/faketoe/master/images/faketoe.png)
+<a href="https://github.com/walmartlabs/blammo"><img src="https://raw.github.com/walmartlabs/blammo/master/images/from.png" align="right" /></a>
+![faketoe Logo](/images/faketoe.png)
 
 XML to JSON converter
 
