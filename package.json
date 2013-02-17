@@ -1,7 +1,7 @@
 {
   "name": "faketoe",
   "description": "XML to JSON converter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "contributors":[
     "Tom Hughes-Croucher <tom.croucher@gmail.com>"
@@ -10,20 +10,25 @@
   "main": "index",
   "keywords": [
     "xml",
-    "json"
+    "json",
+    "conversion"
   ],
   "engines": {
-    "node": ">=0.8.0"
+    "node": "0.8.x"
   },
   "dependencies": {
-    "node-expat": "1.6.x"
+    "node-expat": "2.0.x"
   },
   "devDependencies": {
     "mocha": "1.x.x",
-    "chai": "1.0.x"
+    "chai": "1.x.x",
+    "blanket": "1.0.x",
+    "travis-cov": "0.2.x"
   },
   "scripts": {
-    "test": "make test && make unit"
+    "test": "make test && make test-cov",
+    "blanket": { "pattern": "//^((?!\/node_modules\/)(?!\/test\/).)*$/ig", "onlyCwd": true, "data-cover-flags": { "branchTracking": true } },
+    "travis-cov": { "threshold": 100 }
   },
   "licenses": [
     {

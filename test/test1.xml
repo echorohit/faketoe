@@ -16,4 +16,9 @@
   <child>
     <name>5</name>
   </child>
+  <x>
+    <y>a</y>
+    <y>b</y>
+    <y>c</y>
+  </x>
 </item>
