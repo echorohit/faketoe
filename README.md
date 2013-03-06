@@ -1,5 +1,5 @@
 <a href="https://github.com/spumko"><img src="https://raw.github.com/spumko/spumko/master/images/from.png" align="right" /></a>
-![faketoe Logo](/images/faketoe.png)
+![faketoe Logo](https://raw.github.com/spumko/faketoe/master/images/faketoe.png)
 
 XML to JSON converter
 
