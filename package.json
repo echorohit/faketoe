@@ -1,7 +1,7 @@
 {
   "name": "faketoe",
   "description": "XML to JSON converter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "contributors":[
     "Tom Hughes-Croucher <tom.croucher@gmail.com>"
@@ -17,11 +17,10 @@
     "node": "0.10.x"
   },
   "dependencies": {
-    "node-expat": "2.0.x"
+    "node-expat": "2.1.x"
   },
   "devDependencies": {
-    "lab": "0.1.x",
-    "complexity-report": "0.x.x"
+    "lab": "1.x.x"
   },
   "scripts": {
     "test": "make test-cov"
