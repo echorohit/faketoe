@@ -55,6 +55,13 @@ describe('XML', function () {
                         'b',
                         'c'
                         ]
+                    },
+                    extra: {
+                        extended: 'yes'
+                    },
+                    z: {
+                        verbose: 'no',
+                        '$text': 'a'
                     }
                 });
                 done();
