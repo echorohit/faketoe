@@ -21,4 +21,6 @@
     <y>b</y>
     <y>c</y>
   </x>
+  <extra extended="yes"/>
+  <z verbose="no">a</z>
 </item>
