@@ -16,6 +16,11 @@
   <child>
     <name>5</name>
   </child>
+  <goblins>
+    <goblin type="ear" />
+    <goblin type="nose" />
+    <goblin type="throat" />
+  </goblins>
   <x>
     <y>a</y>
     <y>b</y>
