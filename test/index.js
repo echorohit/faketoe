@@ -49,6 +49,19 @@ describe('XML', function () {
                         name: '5'
                     }
                     ],
+                    goblins: {
+                        goblin: [
+                        {
+                            type: 'ear'
+                        },
+                        {
+                            type: 'nose'
+                        },
+                        {
+                            type: 'throat'
+                        },
+                        ]
+                    },
                     x: {
                         y: [
                         'a',
