@@ -14,10 +14,10 @@
     "conversion"
   ],
   "engines": {
-    "node": "0.10.x"
+    "node": ">=0.10.x"
   },
   "dependencies": {
-    "node-expat": "2.1.x"
+    "node-expat": "2.3.x"
   },
   "devDependencies": {
     "lab": "1.x.x"
