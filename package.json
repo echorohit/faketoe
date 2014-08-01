@@ -7,7 +7,7 @@
     "Tom Hughes-Croucher <tom.croucher@gmail.com>",
     "Colin Ihrig"
   ],
-  "repository": "git://github.com/spumko/faketoe",
+  "repository": "git://github.com/hapijs/faketoe",
   "main": "index",
   "keywords": [
     "xml",
@@ -29,7 +29,7 @@
   "licenses": [
     {
       "type": "BSD",
-      "url": "http://github.com/spumko/faketoe/raw/master/LICENSE"
+      "url": "http://github.com/hapijs/faketoe/raw/master/LICENSE"
     }
   ]
 }
