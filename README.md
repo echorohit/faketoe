@@ -5,3 +5,4 @@ XML to JSON converter
 
 [![Build Status](https://secure.travis-ci.org/spumko/faketoe.png)](http://travis-ci.org/spumko/faketoe)
 
+Lead Maintainer: [Nathan LaFreniere](https://github.com/nlf)
