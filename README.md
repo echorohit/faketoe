@@ -1,4 +1,3 @@
-<a href="https://github.com/hapijs"><img src="https://raw.github.com/hapijs/spumko/master/images/from.png" align="right" /></a>
 ![faketoe Logo](https://raw.github.com/hapijs/faketoe/master/images/faketoe.png)
 
 XML to JSON converter
