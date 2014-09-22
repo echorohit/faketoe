@@ -18,9 +18,9 @@ var it = lab.it;
 var expect = Lab.expect;
 
 
-describe('XML', function () {
+describe('faketoe', function () {
 
-    describe('#createParser', function () {
+    describe('createParser()', function () {
 
         it('parses arrays with object members', function (done) {
 
