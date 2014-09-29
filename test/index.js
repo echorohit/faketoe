@@ -18,82 +18,79 @@ var it = lab.it;
 var expect = Lab.expect;
 
 
-describe('faketoe', function () {
+describe('createParser()', function () {
 
-    describe('createParser()', function () {
+    it('parses arrays with object members', function (done) {
 
-        it('parses arrays with object members', function (done) {
+        var parser = Faketoe.createParser(function (err, result) {
 
-            var parser = Faketoe.createParser(function (err, result) {
-
-                expect(err).to.not.exist;
-                expect(result.item).to.deep.equal({
-                    name: '1',
+            expect(err).to.not.exist;
+            expect(result.item).to.deep.equal({
+                name: '1',
+                property: 'a',
+                child: [
+                {
+                    name: '2',
                     property: 'a',
                     child: [
                     {
-                        name: '2',
-                        property: 'a',
-                        child: [
-                        {
-                            name: '3',
-                            property: 'a'
-                        },
-                        {
-                            name: '4'
-                        }
-                        ]
+                        name: '3',
+                        property: 'a'
                     },
                     {
-                        name: '5'
+                        name: '4'
                     }
-                    ],
-                    goblins: {
-                        goblin: [
-                        {
-                            type: 'ear'
-                        },
-                        {
-                            type: 'nose'
-                        },
-                        {
-                            type: 'throat'
-                        },
-                        ]
+                    ]
+                },
+                {
+                    name: '5'
+                }
+                ],
+                goblins: {
+                    goblin: [
+                    {
+                        type: 'ear'
                     },
-                    x: {
-                        y: [
-                        'a',
-                        'b',
-                        'c'
-                        ]
+                    {
+                        type: 'nose'
                     },
-                    extra: {
-                        extended: 'yes'
+                    {
+                        type: 'throat'
                     },
-                    z: {
-                        verbose: 'no',
-                        '$text': 'a'
-                    }
-                });
-                done();
+                    ]
+                },
+                x: {
+                    y: [
+                    'a',
+                    'b',
+                    'c'
+                    ]
+                },
+                extra: {
+                    extended: 'yes'
+                },
+                z: {
+                    verbose: 'no',
+                    '$text': 'a'
+                }
             });
-
-            Fs.createReadStream(__dirname + '/test1.xml').pipe(parser);
+            done();
         });
 
-        it('fails to parse mix of text and child', function (done) {
+        Fs.createReadStream(__dirname + '/test1.xml').pipe(parser);
+    });
 
-            var parser = Faketoe.createParser(function (err, result) {
+    it('fails to parse mix of text and child', function (done) {
 
-                expect(err).to.exist;
-                expect(err.message).to.equal('Element contains mixture of text (text) and child (y) combination');
-                done();
-            });
+        var parser = Faketoe.createParser(function (err, result) {
 
-            parser.write('<x>text<y /></x>');
-            parser.end();
+            expect(err).to.exist;
+            expect(err.message).to.equal('Element contains mixture of text (text) and child (y) combination');
+            done();
         });
+
+        parser.write('<x>text<y /></x>');
+        parser.end();
     });
 });
 
