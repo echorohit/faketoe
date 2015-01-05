@@ -66,6 +66,13 @@ describe('createParser()', function () {
                     'c'
                     ]
                 },
+                y: {
+                    verbose: 'yes',
+                    child: {
+                        name: 'test',
+                        property: 'a'
+                    }
+                },
                 extra: {
                     extended: 'yes'
                 },

@@ -26,6 +26,11 @@
     <y>b</y>
     <y>c</y>
   </x>
+  <y verbose="yes">
+      <child name="test">
+          <property>a</property>
+      </child>
+  </y>
   <extra extended="yes"/>
   <z verbose="no">a</z>
 </item>
