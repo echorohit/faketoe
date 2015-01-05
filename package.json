@@ -1,7 +1,7 @@
 {
   "name": "faketoe",
   "description": "XML to JSON converter",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "author": "Eran Hammer <eran@hammer.io> (http://hueniverse.com)",
   "contributors": [
     "Tom Hughes-Croucher <tom.croucher@gmail.com>",
