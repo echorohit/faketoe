@@ -30,6 +30,7 @@ describe('createParser()', function () {
                 property: 'a',
                 child: [
                 {
+                    id: '1',
                     name: '2',
                     property: 'a',
                     child: [
@@ -43,6 +44,7 @@ describe('createParser()', function () {
                     ]
                 },
                 {
+                    id: '2',
                     name: '5'
                 }
                 ],
