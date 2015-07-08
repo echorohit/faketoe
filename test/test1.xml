@@ -2,7 +2,7 @@
 <item>
   <name>1</name>
   <property>a</property>
-  <child>
+  <child id='1'>
     <name>2</name>
     <property>a</property>
     <child>
@@ -13,7 +13,7 @@
       <name>4</name>
     </child>
   </child>
-  <child>
+  <child id='2'>
     <name>5</name>
   </child>
   <goblins>
