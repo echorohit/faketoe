@@ -9,7 +9,7 @@ node_js:
 addons:
   apt:
     sources:
-      - ubuntu-tookchain-r-test
+      - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
       - gcc-4.8
