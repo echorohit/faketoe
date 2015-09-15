@@ -25,48 +25,48 @@ describe('createParser()', function () {
 
         var parser = Faketoe.createParser(function (err, result) {
 
-            expect(err).to.not.exist;
+            expect(err).to.not.exist();
             expect(result.item).to.deep.equal({
                 name: '1',
                 property: 'a',
                 child: [
-                {
-                    id: '1',
-                    name: '2',
-                    property: 'a',
-                    child: [
                     {
-                        name: '3',
-                        property: 'a'
+                        id: '1',
+                        name: '2',
+                        property: 'a',
+                        child: [
+                            {
+                                name: '3',
+                                property: 'a'
+                            },
+                            {
+                                name: '4'
+                            }
+                        ]
                     },
                     {
-                        name: '4'
+                        id: '2',
+                        name: '5'
                     }
-                    ]
-                },
-                {
-                    id: '2',
-                    name: '5'
-                }
                 ],
                 goblins: {
                     goblin: [
-                    {
-                        type: 'ear'
-                    },
-                    {
-                        type: 'nose'
-                    },
-                    {
-                        type: 'throat'
-                    },
+                        {
+                            type: 'ear'
+                        },
+                        {
+                            type: 'nose'
+                        },
+                        {
+                            type: 'throat'
+                        }
                     ]
                 },
                 x: {
                     y: [
-                    'a',
-                    'b',
-                    'c'
+                        'a',
+                        'b',
+                        'c'
                     ]
                 },
                 y: {
@@ -94,7 +94,7 @@ describe('createParser()', function () {
 
         var parser = Faketoe.createParser(function (err, result) {
 
-            expect(err).to.exist;
+            expect(err).to.exist();
             expect(err.message).to.equal('Element contains mixture of text (text) and child (y) combination');
             done();
         });
